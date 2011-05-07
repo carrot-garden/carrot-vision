@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.carrotgarden</groupId>
+		<artifactId>carrot-jnlp-archon</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>carrot-stripes-app</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.carrotgarden</groupId>
+			<artifactId>carrot-stirpes</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+	</dependencies>
+
+	<properties>
+
+		<tomcatContext>webstart-stripes</tomcatContext>
+
+		<pivotClass>com.carrotgarden.stripes.MainStripes</pivotClass>
+
+		<!-- used by applet -->
+		<mainClassApplet>org.apache.pivot.wtk.BrowserApplicationContext$HostApplet</mainClassApplet>
+		<jnlpProperty1>name="application_class_name" value="${pivotClass}"</jnlpProperty1>
+
+		<!-- used by application -->
+		<mainClassApplication>org.apache.pivot.wtk.DesktopApplicationContext</mainClassApplication>
+		<jnlpArgument1>${pivotClass}</jnlpArgument1>
+
+	</properties>
+
+</project>

@@ -1,0 +1,7 @@
+http://stackoverflow.com/questions/148478/java-2d-drawing-optimal-performance
+
+http://stackoverflow.com/questions/196890/java2d-performance-issues
+
+http://www.randelshofer.ch/oop/graphics/
+
+http://weblogs.java.net/blog/campbell/archive/2006/07/java_2d_tricker.html

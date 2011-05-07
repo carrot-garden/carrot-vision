@@ -1,0 +1,23 @@
+<Window title="hello stripes" maximized="true"
+	xmlns:stripes="com.carrotgarden.stripes" xmlns:bxml="http://pivot.apache.org/bxml"
+	xmlns="org.apache.pivot.wtk">
+
+
+	<BoxPane orientation="vertical" styles="{padding:4, verticalAlignment:'center'}">
+
+		<Label text="hello stripes"
+			styles="{font:'Arial bold 24', color:'#ff0000',
+            horizontalAlignment:'center', verticalAlignment:'center'}" />
+
+		<stripes:Stripes degrees="45" period="25"
+			preferredWidth="100" preferredHeight="100" cycle="20" />
+
+		<stripes:Stripes degrees="90" period="25"
+			preferredWidth="100" preferredHeight="100" cycle="30" />
+
+		<stripes:Stripes degrees="0" period="50"
+			preferredWidth="800" preferredHeight="800" cycle="25" step="1" />
+
+	</BoxPane>
+
+</Window>

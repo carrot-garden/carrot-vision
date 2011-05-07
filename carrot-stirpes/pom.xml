@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.carrotgarden</groupId>
+		<artifactId>carrot-archon</artifactId>
+		<version>1.0.20-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>carrot-stirpes</artifactId>
+
+	<properties>
+		<pivotVersion>2.0</pivotVersion>
+	</properties>
+
+	<dependencies>
+
+		<!-- -->
+
+		<dependency>
+			<groupId>org.apache.pivot</groupId>
+			<artifactId>pivot-core</artifactId>
+			<version>${pivotVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.pivot</groupId>
+			<artifactId>pivot-wtk</artifactId>
+			<version>${pivotVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.pivot</groupId>
+			<artifactId>pivot-web</artifactId>
+			<version>${pivotVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.pivot</groupId>
+			<artifactId>pivot-wtk-terra</artifactId>
+			<version>${pivotVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.pivot</groupId>
+			<artifactId>pivot-charts</artifactId>
+			<version>${pivotVersion}</version>
+		</dependency>
+
+		<!-- -->
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.bxml</include>
+				</includes>
+			</resource>
+		</resources>
+
+	</build>
+
+</project>
